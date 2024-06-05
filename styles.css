@@ -1,0 +1,267 @@
+/* Main Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Homepage Section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.right-content {
+    flex: 1;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
+/* What We Do Section */
+#what-we-do {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    text-align: left;
+}
+
+.service-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    color: red;
+    font-weight: bold;
+}
+
+.service-card p {
+    color: #333;
+}
+
+.service-card .red-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.service-card .red-button:hover {
+    background-color: darkred;
+}
+
+/* Our Projects Section */
+#our-projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.projects-container {
+    display: flex;
+}
+
+.project-image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.project-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: red;
+    font-weight: bold;
+}
+
+.project-card p {
+    color: #333;
+}
+
+.project-card.active {
+    background-color: red;
+    color: white;
+}
+
+/* Experts Growth Section */
+#experts-growth {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.growth-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.growth-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.growth-card:hover {
+    transform: translateY(-5px);
+}
+
+.growth-card .symbol {
+    font-size: 30px;
+    color: red;
+}
+
+.growth-card h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.growth-card p {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Contact Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal input[type="email"],
+.modal input[type="text"],
+.modal label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: none;
+}
+
+.modal input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.red-button:hover {
+    background-color: darkred;
+}
+
+/* Titles */
+.main-title {
+    color: red;
+    font-size: 24px;
+}
+
+.service-title {
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.service-description {
+    color: black;
+    font-size: 16px;
+}
+
+.red-title {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
